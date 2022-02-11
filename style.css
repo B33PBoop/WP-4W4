@@ -426,16 +426,71 @@ COMPOSANTES
   background-color: #594036;
   color: #fa9292;
   padding-left: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-.site__header .header__titre {
-  font-size: 3em;
+@media screen and (min-width: 800px) {
+  .site__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.site__header__titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.site__header__titre h1 {
+  font-size: clamp(2rem, 4vw, 7rem);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.site__header .header__desc {
-  font-size: 1.5rem;
+.site__header__titre h2 {
+  font-size: clamp(1rem, 2vw, 4rem);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 4rem;
+}
+
+.site__header__util {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media screen and (min-width: 800px) {
+  .site__header__util {
+    width: 25%;
+  }
+}
+
+.icones__lien {
+  width: 25px;
+  height: 25px;
+}
+
+.recherche {
+  width: 100%;
+  position: relative;
+}
+
+.recherche__input {
+  width: 100%;
+  padding: 3px;
+}
+
+.recherche__bouton {
+  width: 28px;
+  height: 28px;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
 }
 
 #burger {
