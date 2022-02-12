@@ -1,5 +1,7 @@
 #burger{
     position: absolute;
+    left: 3vw;
+    top: 2vw;
     transition: transform 0.3s;
 }
 
@@ -9,6 +11,7 @@
 
 #chk-burger:checked ~ #burger{
     transform: rotate(90deg);
+    top: 32%;
     transition: transform 0.3s;
 }
 
