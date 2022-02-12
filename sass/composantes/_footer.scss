@@ -2,11 +2,32 @@
     font-family: $font__titre;
     background-color: $color__background-footer;
     padding: 15px;
+
+    display: flex;
+    flex-direction: row;
+
+    div{
+      width: 33%;
+      padding: 10px;
+    }
   }
-  
-.footer__titre,
-.footer__presentation,
-.footer__author {
+
+.footer__info, .footer__lorem{
   color: $color__font-footer;
-  text-align: center;
+}
+
+.footer__liens{
+  .menu{
+    height: 100%;
+  }
+
+  .page_item{
+    font-size: 1.25rem;
+    margin-bottom: 25%;
+    list-style: none;
+
+    a{
+      color:skyblue;
+    }
+  }
 }
