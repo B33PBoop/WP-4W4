@@ -12,6 +12,7 @@ VARIABLES
 --------------------------------------------------------- */
 /* ---------------- BACKGROUND */
 /* ---------------- LIENS */
+/* ---------------- LIENS du FOOTER */
 /* ---------------- FONT */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -357,6 +358,26 @@ a:focus {
 }
 
 a:hover, a:active {
+  outline: 0;
+}
+
+.site__footer a {
+  color: #eb4a0a;
+}
+
+.site__footer a:visited {
+  color: #4f0abd;
+}
+
+.site__footer a:hover, .site__footer a:focus, .site__footer a:active {
+  color: #1ae04c;
+}
+
+.site__footer a:focus {
+  outline: thin dotted;
+}
+
+.site__footer a:hover, .site__footer a:active {
   outline: 0;
 }
 
