@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /*
 theme name: Exercice 1 Jean-Romain Roy
+Author: Jean-Romain Roy
+Author URI: https://github.com/B33PBoop/WP-Ex1
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4w4.
+Version: 1.0.0
+Text Domain: cidw-4w4 
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -514,7 +519,7 @@ COMPOSANTES
 
 #chk-burger:checked ~ #burger {
   transform: rotate(90deg);
-  top: 47%;
+  top: 50%;
   transition: transform 0.3s;
 }
 
@@ -580,7 +585,7 @@ COMPOSANTES
 
 .footer__liens .page_item {
   font-size: 1.25rem;
-  margin-bottom: 25%;
+  margin-bottom: 20px;
   list-style: none;
 }
 
