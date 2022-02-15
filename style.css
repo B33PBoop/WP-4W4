@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Exercice 1 Jean-Romain Roy
+theme name: Lab-4 Jean-Romain Roy
 Author: Jean-Romain Roy
 Author URI: https://github.com/B33PBoop/WP-Ex1
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4w4.
@@ -567,30 +567,41 @@ COMPOSANTES
   background-color: #2f2a28;
   padding: 15px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site__footer__menu {
+  width: 100%;
+}
+
+.site__footer__menu__ul {
+  display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
-.site__footer div {
-  width: 33%;
-  padding: 10px;
-}
-
-.footer__info, .footer__lorem {
-  color: #ffcabc;
-}
-
-.footer__liens .menu {
-  height: 100%;
-}
-
-.footer__liens .page_item {
-  font-size: 1.25rem;
-  margin-bottom: 20px;
+.site__footer__menu__ul .menu-item {
+  margin: 10px 5px;
   list-style: none;
 }
 
-.footer__liens .page_item a {
-  color: skyblue;
+.site__footer__menu__ul .menu-item a {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+.site__footer__menu__ul .menu-item a svg {
+  color: whitesmoke;
+}
+
+.footer__title {
+  color: #ffcabc;
+}
+
+#menu-simple {
+  width: 100%;
 }
 
 /* ---------------------------------------------------------
