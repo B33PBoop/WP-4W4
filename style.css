@@ -384,7 +384,7 @@ a:hover, a:active {
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
-.principal {
+.site__main {
   margin: 20px;
   padding: 10px 15px;
   background-color: #eca7a7;
@@ -614,7 +614,11 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a svg {
-  color: whitesmoke;
+  color: #eb4a0a;
+}
+
+.site__footer__menu__ul .menu-item a:hover svg {
+  color: #1ae04c;
 }
 
 .footer__title {
@@ -666,6 +670,36 @@ theme name: Lab 2 Lemieux Florence
   .site {
     grid-template-columns: 300px auto;
     grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
+}
+
+/* ---------------------------------------------------------
+ANMATIONS
+--------------------------------------------------------- */
+.animation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.animation__bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #12bdbd;
+  color: white;
+  font-size: 3rem;
+  animation: anim-entete 1s forwards;
+}
+
+@keyframes anim-entete {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 /*# sourceMappingURL=style.css.map */

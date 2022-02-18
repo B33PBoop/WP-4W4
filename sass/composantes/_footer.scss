@@ -25,7 +25,13 @@
           padding: 3px;
           
           svg{
-            color: whitesmoke;
+            color: $color__link__footer;
+          }
+
+          &:hover{
+            svg{
+              color: $color__link__footer-hover;
+            }
           }
         }
       }
