@@ -343,15 +343,15 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #7b5647;
+  color: #f0f6ff;
 }
 
 a:visited {
-  color: #5c4033;
+  color: #0b303f;
 }
 
 a:hover, a:focus, a:active {
-  color: white;
+  color: #0000bd;
 }
 
 a:focus {
@@ -363,15 +363,15 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: #eb4a0a;
+  color: #f0f6ff;
 }
 
 .site__footer a:visited {
-  color: #4f0abd;
+  color: #0b303f;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #1ae04c;
+  color: #0000bd;
 }
 
 .site__footer a:focus {
@@ -383,15 +383,15 @@ a:hover, a:active {
 }
 
 .header__titre a {
-  color: white;
+  color: #41afd1;
 }
 
 .header__titre a:visited {
-  color: #1b0047;
+  color: #3279b7;
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #10bc3b;
+  color: #00aeff;
 }
 
 .header__titre a:focus {
@@ -408,7 +408,7 @@ COMPOSANTES
 .site__main {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #eca7a7;
+  background-color: #3279b7;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -420,7 +420,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #443936;
+  color: #a1d2ff;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -431,7 +431,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #ffd6d1;
+  background-color: #41afd1;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -455,13 +455,13 @@ COMPOSANTES
 
 .cours__titre {
   font-size: 1.5rem;
-  color: #443936;
+  color: #a1d2ff;
   margin: 5px 0px;
 }
 
 .cours__sigle {
   font-size: 1.2rem;
-  color: #8a5353;
+  color: #a1d2ff;
   margin: 0;
 }
 
@@ -470,8 +470,8 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #594036;
-  color: #fa9292;
+  background-color: #003f53;
+  color: #41afd1;
   padding-left: 10px;
   display: flex;
   flex-direction: column;
@@ -550,8 +550,7 @@ COMPOSANTES
 
 #burger {
   position: absolute;
-  left: 3vw;
-  top: 2vw;
+  top: 1vw;
   transition: transform 0.3s;
 }
 
@@ -561,7 +560,6 @@ COMPOSANTES
 
 #chk-burger:checked ~ #burger {
   transform: rotate(90deg);
-  top: 50%;
   transition: transform 0.3s;
 }
 
@@ -588,11 +586,11 @@ COMPOSANTES
   text-decoration: none;
   display: block;
   padding: 5px;
-  background-color: #ffa3a3;
+  background-color: #41afd1;
 }
 
 .menu-item a:hover {
-  background-color: #ffd1d1;
+  background-color: #00b7ff;
 }
 
 @media screen and (min-width: 800px) {
@@ -606,7 +604,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #2f2a28;
+  background-color: #11142b;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -635,11 +633,11 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a svg {
-  color: #eb4a0a;
+  color: #f0f6ff;
 }
 
 .site__footer__menu__ul .menu-item a:hover svg {
-  color: #1ae04c;
+  color: #0000bd;
 }
 
 .footer__title {
@@ -657,28 +655,28 @@ LAYOUT
 theme name: Lab 2 Lemieux Florence
 */
 .site {
-  background-color: #957365;
+  background-color: #083454;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #594036;
+  background-color: #003f53;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #ff8585;
+  background-color: #3d80ba;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #eca7a7;
+  background-color: #3279b7;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #2f2a28;
+  background-color: #11142b;
 }
 
 .site {
@@ -709,7 +707,7 @@ ANMATIONS
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #12bdbd;
+  background-color: #41afd1;
   color: white;
   font-size: 3rem;
   animation: anim-entete 1s forwards;

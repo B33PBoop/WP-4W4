@@ -17,6 +17,6 @@
                 <?php the_title(); ?>
                 <?php the_content(); ?>
             <?php endif ?>
-    </section>
+</section>
 </main>
 <?php get_footer() ?>
