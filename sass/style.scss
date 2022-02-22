@@ -1,0 +1,43 @@
+/*
+theme name: Lab-4 Jean-Romain Roy
+Author: Jean-Romain Roy
+Author URI: https://github.com/B33PBoop/WP-Ex1
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4w4.
+Version: 1.0.0
+Text Domain: cidw-4w4 
+*/
+/* ---------------------------------------------------------
+VARIABLES
+--------------------------------------------------------- */
+@import "variables/couleurs";
+@import "variables/typo";
+@import "variables/structure";
+
+/* ---------------------------------------------------------
+INITIALISATION
+--------------------------------------------------------- */
+@import "initialisation/normalize";
+@import "initialisation/box-sizing";
+
+/* ---------------------------------------------------------
+ÉLÉMENTS
+--------------------------------------------------------- */
+@import "elements/links";
+
+/* ---------------------------------------------------------
+COMPOSANTES
+--------------------------------------------------------- */
+@import "composantes/contenu";
+@import "composantes/header";
+@import "composantes/navigation";
+@import "composantes/footer";
+
+/* ---------------------------------------------------------
+LAYOUT
+--------------------------------------------------------- */
+@import "layout/layout";
+
+/* ---------------------------------------------------------
+ANMATIONS
+--------------------------------------------------------- */
+@import "animation/entete";
