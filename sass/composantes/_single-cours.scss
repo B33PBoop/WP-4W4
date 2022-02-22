@@ -1,0 +1,11 @@
+.cours{
+
+    &__titre{
+        font-size: 2rem;
+    }
+
+    &__contenu{
+        display: flex;
+        flex-direction: row;
+    }
+}
