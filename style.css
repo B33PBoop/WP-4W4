@@ -530,7 +530,6 @@ COMPOSANTES
 
 .recherche {
   width: 100%;
-  position: relative;
 }
 
 .recherche__input {
@@ -651,6 +650,28 @@ COMPOSANTES
 
 #menu-simple {
   width: 100%;
+}
+
+.recherche-footer {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.recherche-footer__input {
+  width: 80%;
+  padding: 3px;
+}
+
+.recherche-footer__bouton {
+  width: 28px;
+  height: 28px;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 42vw;
 }
 
 .cours__titre {
