@@ -571,6 +571,11 @@ COMPOSANTES
   display: none;
 }
 
+#menu-principal li a {
+  display: flex;
+  align-items: center;
+}
+
 .menu {
   list-style: none;
   margin: 0;
@@ -641,7 +646,7 @@ COMPOSANTES
 }
 
 .footer__title {
-  color: #ffcabc;
+  color: #41afd1;
 }
 
 #menu-simple {

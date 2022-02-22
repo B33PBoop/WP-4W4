@@ -12,6 +12,8 @@
                     "menu_class" => "site__footer__menu__ul",
                     "link_before" => $icone)) 
     ?>
+
+
 </footer>
 </body>
 

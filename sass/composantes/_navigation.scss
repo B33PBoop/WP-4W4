@@ -21,6 +21,15 @@
     display: none;
 }
 
+#menu-principal{
+    li{
+        a{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
 .menu{
     list-style: none;
     margin: 0;
