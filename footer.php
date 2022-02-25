@@ -12,6 +12,8 @@
                     "menu_class" => "site__footer__menu__ul",
                     "link_before" => $icone)) 
     ?>
+
+    <div class="footer__recherche"><?php get_search_form();?></div>
 </footer>
 </body>
 <?php wp_footer(); ?>
