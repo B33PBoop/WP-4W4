@@ -1,4 +1,4 @@
-<?php get_header() ?>
+<?php get_header(); ?>
 <main class="site__main">
     <h1>Front-Page.php</h1>
 
@@ -13,10 +13,11 @@
 
     <section class="formation">
         <h2 class="formation__titre">Page Principale du Site</h2>
-            <?php if (have_posts()): the_post();?>
+            <?php if (have_posts()): while(have_posts()) : the_post();?>
                 <?php the_title(); ?>
                 <?php the_content(); ?>
-            <?php endif ?>
+                <?php endwhile; ?>
+            <?php endif; ?>
 </section>
 </main>
-<?php get_footer() ?>
+<?php get_footer(); ?>
