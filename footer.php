@@ -14,6 +14,7 @@
     ?>
 
     <div class="footer__recherche"><?php get_search_form();?></div>
+    <!-- Go modify the scss file for the footer: create and import a new "_recherche" doc in composantes and move/change the scss rules for the search bars over there -->
 </footer>
 </body>
 <?php wp_footer(); ?>
