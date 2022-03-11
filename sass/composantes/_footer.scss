@@ -1,11 +1,45 @@
-.site__footer {
+.site__footer{
   font-family: $font__titre;
   background-color: $color__background-footer;
   padding: 15px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  &__colonne {
+    border: 3px solid red;
+    display: flex;
+    justify-content: space-between;    
+  }
+
+  &__ligne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    section{
+      color: $color__font-footer;
+    }
+
+    .footer__auteur{
+
+    }
+
+    .footer__desc{
+
+    }
+    
+    .footer__copyright{
+      
+    }
+
+    .footer__menu{
+
+    }
+
+    .footer__recherche{
+
+    }
+    
+  }
+
 
   &__menu{
     width: 100%;
@@ -36,15 +70,21 @@
         }
       }
     }
-  }
+  } // fin du Menu
+} 
 
-}
+.footer__adresse{
+      color: $color__font-footer;
+    }
 
-.footer__title{
-  color: $color__font-footer;
-}
+    .footer__article{
+
+    }
+
+    .footer__lien{
+
+    }
 
 #menu-simple{
   width: 100%;
-
 }
