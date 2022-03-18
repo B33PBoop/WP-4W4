@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Lab-5 Jean-Romain Roy
+theme name: TP1 Jean-Romain Roy
 Author: Jean-Romain Roy
 Author URI: https://github.com/B33PBoop/WP-Ex1
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4w4.
@@ -14,6 +14,9 @@ VARIABLES
 /* ---------------- LIENS */
 /* ---------------- LIENS FOOTER */
 /* ---------------- LIENS HEADER */
+/* ----------------- MENU PRINCIPAL */
+/* ----------------- MENU FOOTER */
+/* ---------------- BACKGROUNDS */
 /* ---------------- FONT */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -342,6 +345,8 @@ html {
 /* ---------------------------------------------------------
 ÉLÉMENTS
 --------------------------------------------------------- */
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
 a {
   color: #f0f6ff;
 }
@@ -399,6 +404,52 @@ a:hover, a:active {
 }
 
 .header__titre a:hover, .header__titre a:active {
+  outline: 0;
+}
+
+.site__footer .menu_item a {
+  color: #f0f6ff;
+  background-color: #2154fa;
+}
+
+.site__footer .menu_item a:visited {
+  color: #3279b7;
+  background-color: #13bfd6;
+}
+
+.site__footer .menu_item a:hover, .site__footer .menu_item a:focus, .site__footer .menu_item a:active {
+  color: #0000bd;
+  background-color: #1850b8;
+}
+
+.site__footer .menu_item a:focus {
+  outline: thin dotted;
+}
+
+.site__footer .menu_item a:hover, .site__footer .menu_item a:active {
+  outline: 0;
+}
+
+#menu-principal .menu-item a {
+  color: #f0f6ff;
+  background-color: #65a2ff;
+}
+
+#menu-principal .menu-item a:visited {
+  color: #f0f6ff;
+  background-color: #295ea3;
+}
+
+#menu-principal .menu-item a:hover, #menu-principal .menu-item a:focus, #menu-principal .menu-item a:active {
+  color: #8eb1fd;
+  background-color: #0046c9;
+}
+
+#menu-principal .menu-item a:focus {
+  outline: thin dotted;
+}
+
+#menu-principal .menu-item a:hover, #menu-principal .menu-item a:active {
   outline: 0;
 }
 
@@ -606,9 +657,13 @@ COMPOSANTES
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: #11142b;
   padding: 15px;
+}
+
+.site__footer__colonne {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-around;
 }
 
 .site__footer__menu {
@@ -640,10 +695,6 @@ COMPOSANTES
   color: #0000bd;
 }
 
-.footer__title {
-  color: #ffcabc;
-}
-
 #menu-simple {
   width: 100%;
 }
@@ -661,16 +712,28 @@ COMPOSANTES
 LAYOUT
 --------------------------------------------------------- */
 /*
-theme name: Lab 2 Lemieux Florence
+theme name: TP1 Roy Jean-Romain
 */
 .site {
   background-color: #083454;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #376bb9;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  z-index: -1;
+}
+
 .site__header {
   grid-area: header;
-  background-color: #003f53;
+  background-color: rgba(0, 63, 83, 0.5);
 }
 
 .site__barre {
@@ -680,7 +743,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site__main {
   grid-area: main;
-  background-color: #3279b7;
+  background-color: rgba(50, 121, 183, 0.5);
 }
 
 .site__footer {

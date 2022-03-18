@@ -13,7 +13,6 @@ $color__link : rgb(240, 246, 255);
 $color__link-hover : rgb(0, 0, 189);
 $color__link-visited : rgb(11, 48, 63);
 
-
 /* ---------------- LIENS FOOTER */
 $color__link__footer : rgb(240, 246, 255);
 $color__link__footer-hover : rgb(0, 0, 189);
@@ -26,18 +25,20 @@ $color__link__header-visited : rgb(50, 121, 183);
 
 /* ----------------- MENU PRINCIPAL */
 $color__link__menu__principal : rgb(240, 246, 255);
-$color__link__menu__principal-hover : rgb(0, 0, 189);
-$color__link__menu__principal-visited : rgb(50, 121, 183);
+$color__link__menu__principal-hover : rgb(142, 177, 253);
+$color__link__menu__principal-visited : rgb(240, 246, 255);
 
 /* ----------------- MENU FOOTER */
 $color__link__footer__menu : rgb(240, 246, 255);
 $color__link__footer__menu-hover : rgb(0, 0, 189);
 $color__link__footer__menu-visited : rgb(50, 121, 183);
+
 /* ---------------- BACKGROUNDS */
-$background__link__menu__principal : rgb(240, 246, 255);
-$background__link__menu__principal-hover : rgb(0, 0, 189);
-$background__link__menu__principal-visited : rgb(50, 121, 183);
-$background__link__footer__menu : rgb(138, 235, 129);
+$background__link__menu__principal : rgb(101, 162, 255);
+$background__link__menu__principal-hover : rgb(41, 94, 163);
+$background__link__menu__principal-visited : rgb(0, 70, 201);
+
+$background__link__footer__menu : rgb(33, 84, 250);
 $background__link__footer__menu-visited : rgb(24, 80, 184);
 $background__link__footer__menu-hover : rgb(19, 191, 214);
 

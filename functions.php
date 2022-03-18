@@ -1,7 +1,8 @@
 <?php 
 
 function cidw_4w4_enqueue(){
-    wp_enqueue_style('style_css', get_stylesheet_uri());
+    // wp_enqueue_style('style_css', get_stylesheet_uri());
+    wp_enqueue_style('4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
 }
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
@@ -45,7 +46,7 @@ function my_register_sidebars() {
         array(
             'id'            => 'footer_colonne_1',
             'name'          => __( 'Footer colonne #1' ),
-            'description'   => __( 'Sidebar s\'affichant dansune colonne du footer'),
+            'description'   => __( 'Sidebar s\'affichant dans une colonne du footer'),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title">',
@@ -57,7 +58,7 @@ function my_register_sidebars() {
         array(
             'id'            => 'footer_colonne_2',
             'name'          => __( 'Footer colonne #2' ),
-            'description'   => __( 'Sidebar s\'affichant dansune colonne du footer'),
+            'description'   => __( 'Sidebar s\'affichant dans une colonne du footer'),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title">',
@@ -69,7 +70,7 @@ function my_register_sidebars() {
         array(
             'id'            => 'footer_colonne_3',
             'name'          => __( 'Footer colonne #3' ),
-            'description'   => __( 'Sidebar s\'affichant dansune colonne du footer'),
+            'description'   => __( 'Sidebar s\'affichant dans une colonne du footer'),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title">',
