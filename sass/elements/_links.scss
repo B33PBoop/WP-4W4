@@ -70,7 +70,6 @@ a{
 							$background__link__footer__menu-hover);
 }
 
-// aura a changer la classe de #menu-principal
 #menu-principal .menu-item a{
 	@include links__menu(	$color__link__menu__principal, 
 							$color__link__menu__principal-visited,

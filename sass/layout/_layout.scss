@@ -7,9 +7,21 @@ theme name: Lab 2 Lemieux Florence
     font-family: $font__main;
 }
 
+.home::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    z-index: -1;
+}
+
 .site__header{
     grid-area: header;  
-    background-color: $color__background-header;
+    background-color: rgba($color__background-header, .5);
 }
 
 .site__barre{
@@ -19,7 +31,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site__main{
     grid-area: main;
-    background-color: $color__background-main;
+    background-color: rgba($color__background-main, .5);
 }
 
 .site__footer{

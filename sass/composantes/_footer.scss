@@ -3,42 +3,13 @@
   background-color: $color__background-footer;
   padding: 15px;
 
-  &__colonne {
-    border: 3px solid red;
+  &__colonne{
     display: flex;
-    justify-content: space-between;    
-  }
-
-  &__ligne{
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-
-    section{
-      color: $color__font-footer;
-    }
-
-    .footer__auteur{
-
-    }
-
-    .footer__desc{
-
-    }
-    
-    .footer__copyright{
-      
-    }
-
-    .footer__menu{
-
-    }
-
-    .footer__recherche{
-
-    }
-    
+    justify-content: space-around;
   }
+
 
 
   &__menu{
@@ -72,18 +43,6 @@
     }
   } // fin du Menu
 } 
-
-.footer__adresse{
-      color: $color__font-footer;
-    }
-
-    .footer__article{
-
-    }
-
-    .footer__lien{
-
-    }
 
 #menu-simple{
   width: 100%;

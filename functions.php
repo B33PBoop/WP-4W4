@@ -26,12 +26,16 @@ function cidw_4w4_filtre_choix_menu($obj_menu){
 add_filter("wp_nav_menu_objects", "cidw_4w4_filtre_choix_menu");
 
 /*Ajout de supports*/
-add_theme_support( 'post-thumbnails' );
-add_theme_support('custom-logo', array(
-    'width' => 100,
-    'height' => 100
-));
-//Revoir cette fonction dans la vidéo du cours
+function cidw_4w4_add_theme_support(){
+
+    add_theme_support( 'post-thumbnails' );
+    add_theme_support('custom-logo', array(
+        'height' => 100,
+        'width' => 100,
+    ));
+
+}
+add_action('after_setup_theme', 'cidw_4w4_add_theme_support');
 
 /* Enregistrement des Sidebars */
 add_action( 'widgets_init', 'my_register_sidebars' );
