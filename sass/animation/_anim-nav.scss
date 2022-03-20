@@ -19,3 +19,14 @@
         }
     }
 }
+
+#menu-externe{
+    .menu-item{
+        transition: transform 0.3s;
+
+        &:hover{
+            transform: scaleX(110%);
+            transition: transform 0.3s;
+        }
+    }
+}

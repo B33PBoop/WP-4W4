@@ -663,7 +663,7 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 10px;
   margin-bottom: 25px;
 }
@@ -676,6 +676,10 @@ COMPOSANTES
 
 .site__footer__colonne .footer__article {
   height: 100%;
+}
+
+.site__footer__colonne .footer__article .widget-title {
+  color: #41afd1;
 }
 
 .site__footer__ligne {
@@ -829,6 +833,15 @@ ANMATIONS
 
 .site__footer__menu__ul .menu-item:hover {
   transform: scale(110%);
+  transition: transform 0.3s;
+}
+
+#menu-externe .menu-item {
+  transition: transform 0.3s;
+}
+
+#menu-externe .menu-item:hover {
+  transform: scaleX(110%);
   transition: transform 0.3s;
 }
 /*# sourceMappingURL=style.css.map */
