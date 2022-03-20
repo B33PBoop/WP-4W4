@@ -474,6 +474,7 @@ COMPOSANTES
   color: #a1d2ff;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
 }
 
 .formation__liste {
@@ -843,5 +844,44 @@ ANMATIONS
 #menu-externe .menu-item:hover {
   transform: scaleX(110%);
   transition: transform 0.3s;
+}
+
+.formation__titre {
+  animation: anim-titre 1s forwards;
+}
+
+.formation h2 {
+  animation: anim-sousTitre 1s forwards;
+}
+
+.formation h3 {
+  animation: anim-desc 1s forwards;
+}
+
+@keyframes anim-titre {
+  0% {
+    transform: translate(100vw, -100vh);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes anim-sousTitre {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes anim-desc {
+  0% {
+    transform: translate(100vw, 100vh);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 /*# sourceMappingURL=style.css.map */

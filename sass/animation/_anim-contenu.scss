@@ -1,0 +1,44 @@
+.formation{
+    &__titre{
+      animation: anim-titre 1s forwards;
+    }
+
+    h2{
+        animation: anim-sousTitre 1s forwards;
+    }
+
+    h3{
+        animation: anim-desc 1s forwards;
+    }
+}
+
+
+@keyframes anim-titre{
+    0%{
+        transform: translate(100vw, -100vh);
+    }
+
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes anim-sousTitre{
+    0%{
+        transform: translateX(100vw);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes anim-desc{
+    0%{
+        transform: translate(100vw, 100vh);
+    }
+
+    100%{
+        transform: translate(0, 0);
+    }
+}
