@@ -16,7 +16,7 @@ VARIABLES
 /* ---------------- LIENS HEADER */
 /* ----------------- MENU PRINCIPAL */
 /* ----------------- MENU FOOTER */
-/* ---------------- BACKGROUNDS */
+/* ---------------- MENU BACKGROUNDS */
 /* ---------------- FONT */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -372,11 +372,11 @@ a:hover, a:active {
 }
 
 .site__footer a:visited {
-  color: #0b303f;
+  color: #12499b;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #0000bd;
+  color: #6b89dd;
 }
 
 .site__footer a:focus {
@@ -641,7 +641,7 @@ COMPOSANTES
 }
 
 .menu-item a:hover {
-  background-color: #00b7ff;
+  background-color: #084fac;
 }
 
 @media screen and (min-width: 800px) {
@@ -661,10 +661,21 @@ COMPOSANTES
 
 .site__footer__colonne {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 10px;
   margin-bottom: 25px;
+}
+
+@media screen and (min-width: 800px) {
+  .site__footer__colonne {
+    flex-direction: row;
+  }
+}
+
+.site__footer__colonne .footer__article {
+  height: 100%;
 }
 
 .site__footer__ligne {
@@ -701,7 +712,7 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a:hover svg {
-  color: #0000bd;
+  color: #6b89dd;
 }
 
 #menu-simple {
@@ -809,6 +820,15 @@ ANMATIONS
 
 #menu-principal .menu-item:hover {
   transform: translateX(15px);
+  transition: transform 0.3s;
+}
+
+.site__footer__menu__ul .menu-item {
+  transition: transform 0.3s;
+}
+
+.site__footer__menu__ul .menu-item:hover {
+  transform: scale(110%);
   transition: transform 0.3s;
 }
 /*# sourceMappingURL=style.css.map */

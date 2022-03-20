@@ -8,3 +8,14 @@
         }
     }
 }
+
+.site__footer__menu__ul{
+    .menu-item{
+        transition: transform 0.3s;
+
+        &:hover{
+            transform: scale(110%);
+            transition: transform 0.3s;
+        }
+    }
+}
