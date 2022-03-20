@@ -77,6 +77,18 @@ function my_register_sidebars() {
             'after_title'   => '</h3>',
         )
     );
+
+    register_sidebar(
+        array(
+            'id'            => 'header_links',
+            'name'          => __( 'Liens sociaux' ),
+            'description'   => __( 'Sidebar s\'affichant au dessus de la barre de recherche du header'),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
 }
 
 ?>
