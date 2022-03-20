@@ -1,7 +1,6 @@
 <?php get_header() ?>
 <main class="principal">
     <section class="site__main">
-    <h1>Page.php</h1>
         <section class="formation">
             <h2 class="formation__titre">Page Générale</h2>
                 <?php if (have_posts()): the_post();?>

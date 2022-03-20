@@ -536,6 +536,16 @@ COMPOSANTES
   }
 }
 
+.site__header .custom-logo-link {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .site__header .custom-logo-link {
+    display: block;
+  }
+}
+
 .site__header__titre {
   display: flex;
   flex-direction: row;
@@ -664,6 +674,15 @@ COMPOSANTES
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+.site__footer__ligne {
+  color: white;
+}
+
+.site__footer__ligne section {
+  text-align: center;
 }
 
 .site__footer__menu {
@@ -792,5 +811,14 @@ ANMATIONS
   100% {
     transform: translateY(0);
   }
+}
+
+#menu-principal .menu-item {
+  transition: transform 0.3s;
+}
+
+#menu-principal .menu-item:hover {
+  transform: translateX(15px);
+  transition: transform 0.3s;
 }
 /*# sourceMappingURL=style.css.map */

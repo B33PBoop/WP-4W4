@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 <main class="site__main">
-    <h1>Front-Page.php</h1>
 
     <section class="animation">
         <div class="animation__bloc">1</div>

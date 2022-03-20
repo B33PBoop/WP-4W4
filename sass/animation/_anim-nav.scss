@@ -1,0 +1,10 @@
+#menu-principal{
+    .menu-item{
+        transition: transform 0.3s;
+
+        &:hover{
+            transform: translateX(15px);
+            transition: transform 0.3s;
+        }
+    }
+}

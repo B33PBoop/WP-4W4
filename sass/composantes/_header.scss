@@ -12,6 +12,14 @@
       align-items: center;
     }
 
+    .custom-logo-link{
+      display: none;
+
+      @media screen and (min-width: $largeur__media--tablette){
+        display: block;
+      }
+    }
+
     &__titre{
       display: flex;
       flex-direction: row;
