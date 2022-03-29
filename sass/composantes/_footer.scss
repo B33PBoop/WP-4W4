@@ -5,9 +5,30 @@
 
   &__colonne{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 25px;
+
+    @media screen and (min-width:$largeur__media--tablette){
+      flex-direction: row;
+    }
+
+    .footer__article{
+      height: 100%;
+
+      .widget-title{
+        color: $color__font-footer;
+      }
+    }
+  }
+
+  &__ligne{
+    color: white;
+    section{
+      text-align: center;
+    }
   }
 
 

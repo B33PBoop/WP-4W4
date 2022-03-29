@@ -7,5 +7,8 @@
     &__contenu{
         display: flex;
         flex-direction: row;
+        p{
+            color: $color__font-main;
+        }
     }
 }

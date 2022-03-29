@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Lab-5 Jean-Romain Roy
+theme name: TP1 Jean-Romain Roy
 Author: Jean-Romain Roy
 Author URI: https://github.com/B33PBoop/WP-Ex1
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4w4.
@@ -16,7 +16,7 @@ VARIABLES
 /* ---------------- LIENS HEADER */
 /* ----------------- MENU PRINCIPAL */
 /* ----------------- MENU FOOTER */
-/* ---------------- BACKGROUNDS */
+/* ---------------- MENU BACKGROUNDS */
 /* ---------------- FONT */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -372,11 +372,11 @@ a:hover, a:active {
 }
 
 .site__footer a:visited {
-  color: #0b303f;
+  color: #12499b;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #0000bd;
+  color: #6b89dd;
 }
 
 .site__footer a:focus {
@@ -409,7 +409,7 @@ a:hover, a:active {
 
 .site__footer .menu_item a {
   color: #f0f6ff;
-  background-color: #8aeb81;
+  background-color: #2154fa;
 }
 
 .site__footer .menu_item a:visited {
@@ -432,17 +432,17 @@ a:hover, a:active {
 
 #menu-principal .menu-item a {
   color: #f0f6ff;
-  background-color: #f0f6ff;
+  background-color: #65a2ff;
 }
 
 #menu-principal .menu-item a:visited {
-  color: #3279b7;
-  background-color: #0000bd;
+  color: #f0f6ff;
+  background-color: #295ea3;
 }
 
 #menu-principal .menu-item a:hover, #menu-principal .menu-item a:focus, #menu-principal .menu-item a:active {
-  color: #0000bd;
-  background-color: #3279b7;
+  color: #8eb1fd;
+  background-color: #0046c9;
 }
 
 #menu-principal .menu-item a:focus {
@@ -474,6 +474,7 @@ COMPOSANTES
   color: #a1d2ff;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
 }
 
 .formation__liste {
@@ -488,6 +489,8 @@ COMPOSANTES
   margin: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   width: 100%;
   padding: 10px;
 }
@@ -536,6 +539,16 @@ COMPOSANTES
   }
 }
 
+.site__header .custom-logo-link {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .site__header .custom-logo-link {
+    display: block;
+  }
+}
+
 .site__header__titre {
   display: flex;
   flex-direction: row;
@@ -565,18 +578,6 @@ COMPOSANTES
   .site__header__util {
     width: 25%;
   }
-}
-
-.icones {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.icones__lien {
-  width: 25px;
-  height: 25px;
 }
 
 .recherche {
@@ -641,7 +642,7 @@ COMPOSANTES
 }
 
 .menu-item a:hover {
-  background-color: #00b7ff;
+  background-color: #084fac;
 }
 
 @media screen and (min-width: 800px) {
@@ -664,6 +665,30 @@ COMPOSANTES
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 800px) {
+  .site__footer__colonne {
+    flex-direction: row;
+  }
+}
+
+.site__footer__colonne .footer__article {
+  height: 100%;
+}
+
+.site__footer__colonne .footer__article .widget-title {
+  color: #41afd1;
+}
+
+.site__footer__ligne {
+  color: white;
+}
+
+.site__footer__ligne section {
+  text-align: center;
 }
 
 .site__footer__menu {
@@ -692,7 +717,7 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a:hover svg {
-  color: #0000bd;
+  color: #6b89dd;
 }
 
 #menu-simple {
@@ -708,11 +733,15 @@ COMPOSANTES
   flex-direction: row;
 }
 
+.cours__contenu p {
+  color: #a1d2ff;
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
 /*
-theme name: Lab 2 Lemieux Florence
+theme name: TP1 Roy Jean-Romain
 */
 .site {
   background-color: #083454;
@@ -726,7 +755,7 @@ theme name: Lab 2 Lemieux Florence
   height: 100%;
   top: 0;
   left: 0;
-  background-color: aqua;
+  background-color: #376bb9;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   z-index: -1;
 }
@@ -754,13 +783,18 @@ theme name: Lab 2 Lemieux Florence
 .site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "sidebar" "header" "main" "footer";
+  grid-template-areas: "sidebar"
+ "header"
+ "main"
+ "footer";
 }
 
 @media screen and (min-width: 800px) {
   .site {
     grid-template-columns: 300px auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+    grid-template-areas: "header header"
+ "sidebar main"
+ "footer footer";
   }
 }
 
@@ -791,6 +825,72 @@ ANMATIONS
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+#menu-principal .menu-item {
+  transition: transform 0.3s;
+}
+
+#menu-principal .menu-item:hover {
+  transform: translateX(15px);
+  transition: transform 0.3s;
+}
+
+.site__footer__menu__ul .menu-item {
+  transition: transform 0.3s;
+}
+
+.site__footer__menu__ul .menu-item:hover {
+  transform: scale(110%);
+  transition: transform 0.3s;
+}
+
+#menu-externe .menu-item {
+  transition: transform 0.3s;
+}
+
+#menu-externe .menu-item:hover {
+  transform: scaleX(110%);
+  transition: transform 0.3s;
+}
+
+.formation__titre {
+  animation: anim-titre 1s forwards;
+}
+
+.formation h2 {
+  animation: anim-sousTitre 1s forwards;
+}
+
+.formation h3 {
+  animation: anim-desc 1s forwards;
+}
+
+@keyframes anim-titre {
+  0% {
+    transform: translate(100vw, -100vh);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes anim-sousTitre {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes anim-desc {
+  0% {
+    transform: translate(100vw, 100vh);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
 /*# sourceMappingURL=style.css.map */

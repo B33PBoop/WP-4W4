@@ -15,6 +15,7 @@
         color: $color__font-main;
         margin: 10px 0px;
         font-family: $font__titre;
+        text-align: center;
     }
 
     &__liste {
@@ -29,6 +30,8 @@
         margin: 10px;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
         width: 100%;
         @media screen and (min-width:$largeur__media--tablette){
             width: 45%;

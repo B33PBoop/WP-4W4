@@ -1,0 +1,32 @@
+#menu-principal{
+    .menu-item{
+        transition: transform 0.3s;
+
+        &:hover{
+            transform: translateX(15px);
+            transition: transform 0.3s;
+        }
+    }
+}
+
+.site__footer__menu__ul{
+    .menu-item{
+        transition: transform 0.3s;
+
+        &:hover{
+            transform: scale(110%);
+            transition: transform 0.3s;
+        }
+    }
+}
+
+#menu-externe{
+    .menu-item{
+        transition: transform 0.3s;
+
+        &:hover{
+            transform: scaleX(110%);
+            transition: transform 0.3s;
+        }
+    }
+}
