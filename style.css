@@ -662,7 +662,7 @@ COMPOSANTES
 
 .site__footer__colonne {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   gap: 10px;
@@ -783,13 +783,18 @@ theme name: TP1 Roy Jean-Romain
 .site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "sidebar" "header" "main" "footer";
+  grid-template-areas: "sidebar"
+ "header"
+ "main"
+ "footer";
 }
 
 @media screen and (min-width: 800px) {
   .site {
     grid-template-columns: 300px auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+    grid-template-areas: "header header"
+ "sidebar main"
+ "footer footer";
   }
 }
 
