@@ -453,6 +453,50 @@ a:hover, a:active {
   outline: 0;
 }
 
+h1 {
+  font-size: clamp(2rem, 4vw, 5rem);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2.3rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3, h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -473,7 +517,6 @@ COMPOSANTES
   font-size: 2rem;
   color: #a1d2ff;
   margin: 10px 0px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-align: center;
 }
 
@@ -483,6 +526,8 @@ COMPOSANTES
 }
 
 .formation__cours {
+  background-repeat: no-repeat;
+  background-position: 97% 3%;
   background-color: #41afd1;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
@@ -521,6 +566,30 @@ COMPOSANTES
 
 .cours__description {
   font-size: 1rem;
+}
+
+.web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe");
+}
+
+.jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+}
+
+.utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+}
+
+.video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+}
+
+.creation-3d {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
 }
 
 .site__header {
@@ -665,6 +734,21 @@ COMPOSANTES
   list-style: none;
   gap: 15px;
   width: 100%;
+}
+
+.menu-accueil-container .menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-accueil-container .menu .menu-item {
+  width: 20%;
+  text-align: center;
+}
+
+.menu-accueil-container .menu .menu-item a {
+  background-color: #65a2ff;
+  font-size: 1.5rem;
 }
 
 .site__footer {

@@ -9,6 +9,11 @@
         <div class="animation__bloc">5</div>
     </section>
 
+    <?php 
+        wp_nav_menu(array(  'menu'=> 'accueil',
+                            'container' => 'nav',
+        ))
+    ?>
 
     <section class="formation">
         <h2 class="formation__titre">Page Principale du Site</h2>

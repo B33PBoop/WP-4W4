@@ -1,0 +1,23 @@
+.menu-accueil-container{ //nav
+    
+    .menu{ //ul
+        display: flex;
+        justify-content: space-around;
+
+        .menu-item{ //li
+            width: 20%;
+            text-align: center;
+            a{
+                background-color: $background__link__menu__principal;
+                font-size: 1.5rem;
+            }
+
+            // &:hover{
+            //     ////ajouter ici les différentes couleurs
+            //     a{
+            //         //ajouter ici les différentes couleurs
+            //     }
+            // }
+        }
+    }
+}
