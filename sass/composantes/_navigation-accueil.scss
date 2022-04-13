@@ -1,4 +1,4 @@
-.menu-accueil-container{ //nav
+.menu-accueil-container, .menu-evenement-container{ //nav
     
     .menu{ //ul
         display: flex;
@@ -31,7 +31,6 @@
 
                 height: 100%;
                 font-size: 1.5rem; //taille de la police pour les titres
-                background-color: $background__link__menu__principal;
 
                 hr{
                     width: 90%;
@@ -50,13 +49,34 @@
                     background-size: cover;
                 }
             }
+        }
+    }
+}
 
-            // &:hover{
-            //     ////ajouter ici les différentes couleurs
-            //     a{
-            //         //ajouter ici les différentes couleurs
-            //     }
-            // }
+.menu-accueil-container{
+    .menu-item{
+        a{
+            color: $color__font-main;
+        }
+    }
+
+    &:hover{
+        a{
+            color: $color__font-main;
+        }
+    }
+}
+
+.menu-evenement-container{
+    .menu-item{
+        a{
+            color:$color__font-main ;
+        }
+    }
+
+    &:hover{
+        a{
+            color:$color__font-main ;
         }
     }
 }

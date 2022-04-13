@@ -736,59 +736,74 @@ COMPOSANTES
   width: 100%;
 }
 
-.menu-accueil-container .menu {
+.menu-accueil-container .menu, .menu-evenement-container .menu {
   display: flex;
   justify-content: space-around;
 }
 
-.menu-accueil-container .menu .accueil__cours .menu-item-icone {
+.menu-accueil-container .menu .accueil__cours .menu-item-icone, .menu-evenement-container .menu .accueil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=folder");
 }
 
-.menu-accueil-container .menu .accueil__prof .menu-item-icone {
+.menu-accueil-container .menu .accueil__prof .menu-item-icone, .menu-evenement-container .menu .accueil__prof .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=user-group");
 }
 
-.menu-accueil-container .menu .accueil__aide .menu-item-icone {
+.menu-accueil-container .menu .accueil__aide .menu-item-icone, .menu-evenement-container .menu .accueil__aide .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=clipboard-check");
 }
 
-.menu-accueil-container .menu .accueil__info .menu-item-icone {
+.menu-accueil-container .menu .accueil__info .menu-item-icone, .menu-evenement-container .menu .accueil__info .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=location-marker");
 }
 
-.menu-accueil-container .menu .menu-item {
+.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
   width: 25%;
   height: 250px;
   padding: 10px;
   text-align: center;
 }
 
-.menu-accueil-container .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 100%;
   font-size: 1.5rem;
-  background-color: #65a2ff;
 }
 
-.menu-accueil-container .menu .menu-item a hr {
+.menu-accueil-container .menu .menu-item a hr, .menu-evenement-container .menu .menu-item a hr {
   width: 90%;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-description {
+.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
   font-size: 1rem;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-icone {
+.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
   width: 2rem;
   height: 2rem;
   background-position: center;
   background-repeat: no-repeat;
   margin-top: auto;
   background-size: cover;
+}
+
+.menu-accueil-container .menu-item a {
+  color: #a1d2ff;
+}
+
+.menu-accueil-container:hover a {
+  color: #a1d2ff;
+}
+
+.menu-evenement-container .menu-item a {
+  color: #a1d2ff;
+}
+
+.menu-evenement-container:hover a {
+  color: #a1d2ff;
 }
 
 .site__footer {

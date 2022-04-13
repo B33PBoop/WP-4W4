@@ -14,7 +14,8 @@ function cidw_4w4_register_nav_menu(){
         'menu_principal' => __('Menu Principal', 'cidw_4w4'),
         'menu_footer' => __('Menu Footer', 'cidw_4w4'),
         'menu_categorie_cours' => __('Menu catégorie cours', 'cidw_4w4'),
-        'menu_accueil' => __('Menu accueil', 'cidw_4w4')
+        'menu_accueil' => __('Menu accueil', 'cidw_4w4'),
+        'menu_evenement'=> __('Menu Évènement', 'cidw_4w4')
     ) );
 }
 add_action('after_setup_theme', 'cidw_4w4_register_nav_menu', 0);
@@ -111,17 +112,19 @@ function cidw_4w4_pre_get_posts(WP_Query $query)
     //le Hook pre-get-post se manifeste juste avant que la requete wp-query soit executée
     //Ce hook nous permettra d'adapter la requete avant de l'executer
 
-      if (!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
+      if (is_admin() 
+        || !$query->is_main_query() 
+        || !$query->is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
         {
-        //$ordre = get_query_var('ordre');
-        $query->set('posts_per_page', -1);
-        // $query->set('orderby', $cle);
-        $query->set('orderby', 'title');
-        // $query->set('order',  $ordre);
-        $query->set('order',  'ASC');
-        // var_dump($query);
-        // die();
-       }
+            return $query;
+        }
+        else {
+            $ordre = get_query_var('ordre', 'asc');
+            $cle = get_query_var('cletri', 'title');
+            $query->set('order',  $ordre);
+            $query->set('orderby', $cle);
+            $query->set('posts_per_page', '-1');
+        }
 }
 add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');
 
@@ -129,7 +132,6 @@ function cidw_4w4_query_vars($params){
     $params[] = "cletri";
     $params[] = "ordre";
     //$params["cletri"] = "title";
-    //var_dump($params); die();
     return $params;
 }
 add_filter('query_vars', 'cidw_4w4_query_vars' );

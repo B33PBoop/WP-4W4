@@ -1,12 +1,15 @@
 <?php get_header(); ?>
 <main class="site__main">
 
-    <section class="animation">
-        <div class="animation__bloc">1</div>
-        <div class="animation__bloc">2</div>
-        <div class="animation__bloc">3</div>
-        <div class="animation__bloc">4</div>
-        <div class="animation__bloc">5</div>
+    
+
+    <section class="formation">
+        <h2 class="formation__titre">Page Principale du Site</h2>
+            <?php if (have_posts()): the_post();?>
+                 <!--Pour accéder au titre de l'article ("Page d'accueil")-->
+                 <!-- inclure the_title(); dans une balise php -->
+                <?php the_content(); ?>
+            <?php endif; ?>
     </section>
 
     <?php 
@@ -15,14 +18,12 @@
         ))
     ?>
 
-    <section class="formation">
-        <h2 class="formation__titre">Page Principale du Site</h2>
-            <?php if (have_posts()): while(have_posts()) : the_post();?>
-                 <!--Pour accéder au titre de l'article ("Page d'accueil")-->
-                 <!-- inclure the_title(); dans une balise php -->
-                <?php the_content(); ?>
-                <?php endwhile; ?>
-            <?php endif; ?>
-</section>
+    <h2 style="text-align:center;">--- Évènements à venir ---</h2>
+
+    <?php  wp_nav_menu(array(   "menu"=>"evenement",
+                                "container"=>"nav",
+        ));
+    ?>    
+
 </main>
 <?php get_footer(); ?>
