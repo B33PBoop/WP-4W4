@@ -788,10 +788,16 @@ COMPOSANTES
   background-repeat: no-repeat;
   margin-top: auto;
   background-size: cover;
+  transition: transform 0.2s;
 }
 
 .menu-accueil-container .menu-item a {
   color: #a1d2ff;
+}
+
+.menu-accueil-container .menu-item:hover .menu-item-icone {
+  transform: translateY(-25px);
+  transition: transform 0.2s;
 }
 
 .menu-accueil-container:hover a {
@@ -1034,7 +1040,7 @@ ANMATIONS
 
 @keyframes anim-desc {
   0% {
-    transform: translate(100vw, 100vh);
+    transform: translate(100vw);
   }
   100% {
     transform: translate(0, 0);
