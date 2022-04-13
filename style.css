@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-theme name: Lab5 Jean-Romain Roy
+theme name: Exercice 3 Jean-Romain Roy
 Author: Jean-Romain Roy
-Author URI: https://github.com/B33PBoop/WP-Ex1
+Author URI: https://github.com/B33PBoop/WP-4W4
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4w4.
 Version: 1.0.0
 Text Domain: cidw-4w4 
@@ -741,14 +741,54 @@ COMPOSANTES
   justify-content: space-around;
 }
 
+.menu-accueil-container .menu .accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=folder");
+}
+
+.menu-accueil-container .menu .accueil__prof .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=user-group");
+}
+
+.menu-accueil-container .menu .accueil__aide .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=clipboard-check");
+}
+
+.menu-accueil-container .menu .accueil__info .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=location-marker");
+}
+
 .menu-accueil-container .menu .menu-item {
-  width: 20%;
+  width: 25%;
+  height: 250px;
+  padding: 10px;
   text-align: center;
 }
 
 .menu-accueil-container .menu .menu-item a {
-  background-color: #65a2ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
   font-size: 1.5rem;
+  background-color: #65a2ff;
+}
+
+.menu-accueil-container .menu .menu-item a hr {
+  width: 90%;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-description {
+  font-size: 1rem;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-icone {
+  width: 2rem;
+  height: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: auto;
+  background-size: cover;
 }
 
 .site__footer {
