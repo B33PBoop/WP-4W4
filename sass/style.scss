@@ -1,0 +1,49 @@
+/*
+theme name: Exercice 3 Jean-Romain Roy
+Author: Jean-Romain Roy
+Author URI: https://github.com/B33PBoop/WP-4W4
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4w4.
+Version: 1.0.0
+Text Domain: cidw-4w4 
+*/
+/* ---------------------------------------------------------
+VARIABLES
+--------------------------------------------------------- */
+@import "variables/couleurs";
+@import "variables/typo";
+@import "variables/structure";
+
+/* ---------------------------------------------------------
+INITIALISATION
+--------------------------------------------------------- */
+@import "initialisation/normalize";
+@import "initialisation/box-sizing";
+
+/* ---------------------------------------------------------
+ÉLÉMENTS
+--------------------------------------------------------- */
+@import "elements/links";
+@import "elements/balise";
+
+/* ---------------------------------------------------------
+COMPOSANTES
+--------------------------------------------------------- */
+@import "composantes/contenu";
+@import "composantes/header";
+@import "composantes/navigation";
+@import "composantes/navigation-categories";
+@import "composantes/navigation-accueil";
+@import "composantes/footer";
+@import "composantes/single-cours";
+
+/* ---------------------------------------------------------
+LAYOUT
+--------------------------------------------------------- */
+@import "layout/layout";
+
+/* ---------------------------------------------------------
+ANMATIONS
+--------------------------------------------------------- */
+@import "animation/entete";
+@import "animation/anim-nav";
+@import "animation/anim-contenu";

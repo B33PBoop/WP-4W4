@@ -1,0 +1,75 @@
+.site__header {
+    background-color: $color__background-header;
+    color: $color__font-header;
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $largeur__media--tablette) {
+      flex-direction: row; 
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .custom-logo-link{
+      display: none;
+
+      @media screen and (min-width: $largeur__media--tablette){
+        display: block;
+      }
+    }
+
+    &__titre{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 7rem );
+        font-family: $font__titre;
+      }
+  
+      h2 {
+        font-size: clamp(1rem, 2vw, 4rem);
+        font-family: $font__main;
+        margin-left: 4rem;
+      }
+
+    }
+
+    &__util{
+      width: 100%;
+
+      @media screen and (min-width: $largeur__media--tablette) {
+        width: 25%;
+      }
+
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+    }
+    
+  }
+
+  .recherche{
+    width: 100%;
+    position: relative;
+
+    &__input{
+      width: 100%;
+      padding: 3px;
+    }
+
+    &__bouton{
+      width: 28px;
+      height: 28px;
+      outline: none;
+      padding: 0;
+      margin: 0;
+
+      position: absolute;
+      right: 0;
+    }
+  }
