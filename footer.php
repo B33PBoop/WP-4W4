@@ -28,6 +28,10 @@
         <section class="footer__recherche"><?php get_search_form();?></section>
     </div>
 </footer>
+<div class="boite__modale">
+    <article class="boite__modale__texte"></article>
+    <button class="boite__modale__fermer">Fermer</button>
+</div>
 </body>
 <?php wp_footer(); ?>
 </html>
