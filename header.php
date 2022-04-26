@@ -7,7 +7,7 @@
     <title>WP-4P4 - Interfaces et developement web</title>
     <?php wp_head() ?>
 </head>
-<body  <?php body_class("site"); ?>>
+<body  <?php body_class("site"); ?> style="background-color:<?= get_theme_mod('couleur_background_body')?>;">
 <header class="site__header">
     <?= get_custom_logo(); ?>
     <section class="site__header__titre">
