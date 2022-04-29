@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Exercice 4 Jean-Romain Roy
+theme name: Lab 7 Jean-Romain Roy
 Author: Jean-Romain Roy
 Author URI: https://github.com/B33PBoop/WP-4W4
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4w4.
@@ -672,16 +672,11 @@ COMPOSANTES
 #burger {
   position: absolute;
   top: 1vw;
-  transition: transform 0.3s;
+  left: 1vw;
 }
 
 #chk-burger {
   display: none;
-}
-
-#chk-burger:checked ~ #burger {
-  transform: rotate(90deg);
-  transition: transform 0.3s;
 }
 
 #chk-burger:checked ~ .menu-principal-container {
@@ -1068,5 +1063,46 @@ ANMATIONS
   100% {
     transform: translate(0, 0);
   }
+}
+
+.burger {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 25%;
+  overflow: hidden;
+}
+
+.burger .burger__ligne {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  transition: all .5s ease-in-out;
+}
+
+.burger .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 20%, 0% 20%);
+}
+
+.burger .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(0% 40%, 100% 40%, 100% 60%, 0% 60%);
+}
+
+.burger .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(0% 80%, 100% 80%, 100% 100%, 0% 100%);
+}
+
+#chk-burger:checked ~ #burger .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+}
+
+#chk-burger:checked ~ #burger .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(45% 40%, 55% 40%, 55% 60%, 45% 60%);
+}
+
+#chk-burger:checked ~ #burger .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
 }
 /*# sourceMappingURL=style.css.map */
