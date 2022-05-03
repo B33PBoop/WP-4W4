@@ -40,12 +40,6 @@ add_action('customize_register', function(WP_Customize_Manager $manager){
         "sanitize_callback" => "sanitize_hex_color"
     ]);
 
-    // $manager -> add_control('couleur_background_body', [
-    //                                     "section" => "section_modifier_couleur",
-    //                                     "setting" => "couleur_background_body",
-    //                                     "label" => "Couleur de fond du body"
-    // ]);
-
     $manager -> add_control(new WP_Customize_Color_Control($manager, 'couleur_background_body', [
                                                                     "section" => 'section_modifier_couleur',
                                                                     "label" => "Couleur de fond du body"

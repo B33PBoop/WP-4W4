@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Lab 7 Jean-Romain Roy
+theme name: Lab 8 Jean-Romain Roy
 Author: Jean-Romain Roy
 Author URI: https://github.com/B33PBoop/WP-4W4
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4w4.
@@ -911,6 +911,17 @@ COMPOSANTES
 
 .boite__modale__ouvrir {
   transform: scale(1);
+}
+
+/*Galerie Gutenberg de la page d'accueil*/
+.galerie {
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .galerie {
+    width: 75%;
+  }
 }
 
 /* ---------------------------------------------------------
