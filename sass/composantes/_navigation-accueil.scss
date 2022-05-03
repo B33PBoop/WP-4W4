@@ -1,0 +1,90 @@
+.menu-accueil-container, .menu-evenement-container{ //nav
+    
+    .menu{ //ul
+        display: flex;
+        justify-content: space-around;
+
+        .accueil__cours .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=folder');
+        }
+        .accueil__prof .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=user-group');
+        }
+        .accueil__aide .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=clipboard-check');
+        }
+        .accueil__info .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=location-marker');
+        }
+
+        .menu-item{ //li
+            width: 25%;
+            height: 250px;
+            padding: 10px;
+            text-align: center;
+
+            a{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                height: 100%;
+                font-size: 1.5rem; //taille de la police pour les titres
+
+                hr{
+                    width: 90%;
+                }
+
+                .menu-item-description{
+                    font-size: 1rem; //taille de la police pour les descriptions
+                }
+
+                .menu-item-icone{
+                    width: 2rem;
+                    height: 2rem;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    margin-top: auto;
+                    background-size: cover;
+                    transition: transform 0.2s;
+                }
+            }
+        }
+    }
+}
+
+.menu-accueil-container{
+    .menu-item{
+        a{
+            color: $color__font-main;
+        }
+        &:hover{
+            .menu-item-icone{
+                transform: translateY(-25px);
+                transition: transform 0.2s;
+                //Cette animation affecte tout les icones??
+            }
+        }
+    }
+
+    &:hover{
+        a{
+            color: $color__font-main;
+        }
+    }
+}
+
+.menu-evenement-container{
+    .menu-item{
+        a{
+            color:$color__font-main ;
+        }
+    }
+
+    &:hover{
+        a{
+            color:$color__font-main ;
+        }
+    }
+}
