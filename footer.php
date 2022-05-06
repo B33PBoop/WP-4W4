@@ -32,6 +32,10 @@
     <article class="boite__modale__texte"></article>
     <button class="boite__modale__fermer">Fermer</button>
 </div>
+<div class="boite__carrousel">
+    <button class="boite__carrousel__fermer">X</button>
+    <section class="boite__carrousel__nav"></section>
+</div>
 </body>
 <?php wp_footer(); ?>
 </html>
