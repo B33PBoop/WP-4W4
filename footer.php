@@ -35,6 +35,7 @@
 <div class="boite__carrousel">
     <button class="boite__carrousel__fermer">X</button>
     <section class="boite__carrousel__nav"></section>
+    <section class="boite__carrousel__img"></section>
 </div>
 </body>
 <?php wp_footer(); ?>

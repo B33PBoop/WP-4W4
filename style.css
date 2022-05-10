@@ -926,19 +926,43 @@ COMPOSANTES
 }
 
 .boite__carrousel {
-  width: 75%;
-  height: 75%;
-  top: 12.5%;
-  left: 12.5%;
+  width: 95%;
+  height: 95%;
+  top: 2.5%;
+  left: 2.5%;
 }
 
-.boite__carrousel img {
+@media screen and (min-width: 800px) {
+  .boite__carrousel {
+    width: 75%;
+    height: 75%;
+    top: 12.5%;
+    left: 12.5%;
+  }
+}
+
+.boite__carrousel__img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   top: 0;
   left: 0;
+}
+
+.boite__carrousel__img img {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.boite__carrousel__img img.img--ouvrir {
+  opacity: 1;
 }
 
 .boite__carrousel__nav {
@@ -951,13 +975,13 @@ COMPOSANTES
   z-index: 1;
 }
 
-.boite__carrousel__nav button {
+.boite__carrousel__nav .btn {
   width: 20px;
   height: 20px;
   border-radius: 100%;
 }
 
-.boite__carrousel__nav button:focus {
+.boite__carrousel__nav .btn:focus {
   background-color: grey;
 }
 
