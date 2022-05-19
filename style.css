@@ -819,16 +819,13 @@ COMPOSANTES
   color: #d2e9ff;
 }
 
-.menu-evenement-container:hover a {
-  color: #d2e9ff;
-}
-
 .menu-atelier-container .menu-item a {
   color: #d2e9ff;
 }
 
-.menu-atelier-container:hover a {
-  color: #d2e9ff;
+.menu-atelier-container .menu-item:hover .menu-item-icone {
+  transform: translateY(-25px);
+  transition: transform 0.2s;
 }
 
 .site__footer {

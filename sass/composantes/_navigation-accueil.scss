@@ -76,7 +76,6 @@
             .menu-item-icone{
                 transform: translateY(-25px);
                 transition: transform 0.2s;
-                //Cette animation affecte tout les icones??
             }
         }
     }
@@ -94,12 +93,6 @@
             color:$color__font-main ;
         }
     }
-
-    &:hover{
-        a{
-            color:$color__font-main ;
-        }
-    }
 }
 
 .menu-atelier-container{
@@ -107,11 +100,12 @@
         a{
             color:$color__font-main ;
         }
-    }
 
-    &:hover{
-        a{
-            color:$color__font-main ;
+        &:hover{
+            .menu-item-icone{
+                transform: translateY(-25px);
+                transition: transform 0.2s;
+            }
         }
     }
 }
