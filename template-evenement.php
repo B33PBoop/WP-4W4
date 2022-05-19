@@ -1,7 +1,8 @@
 <?php /*Template name: Évènement */?>
+<?php get_header() ?> 
 <main class="site__main">
     <h1>---Template-evenement.php---</h1>
-    <?php get_header() ?> 
+    
         <?php if (have_posts()): the_post();?>
             <?php the_post_thumbnail();?>
             <?php the_title(); ?>
@@ -20,7 +21,6 @@
             <p><?php the_field('resume'); ?></p>
             <h3>Organisateur de l'événement</h3>
             <p><?php the_field('organisateur'); ?></p>
-            <!-- Voir vidéo sem11 c2 pour la création des custom fields requis -->
         <?php endif ?>
 </main>
 <?php get_footer() ?>

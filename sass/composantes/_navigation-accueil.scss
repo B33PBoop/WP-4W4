@@ -1,4 +1,4 @@
-.menu-accueil-container, .menu-evenement-container{ //nav
+.menu-accueil-container, .menu-evenement-container, .menu-atelier-container{ //nav
     
     .menu{ //ul
         display: flex;
@@ -15,6 +15,19 @@
         }
         .accueil__info .menu-item-icone{
             background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=location-marker');
+        }
+
+        .atelier-html .menu-item-icone{
+            background-image: url(https://s2.svgbox.net/files.svg?ic=html);
+        }
+        .atelier-git .menu-item-icone{
+            background-image: url(https://s2.svgbox.net/files.svg?ic=git);
+        }
+        .atelier-react .menu-item-icone{
+            background-image: url(https://s2.svgbox.net/files.svg?ic=reactjs);
+        }
+        .atelier-css .menu-item-icone{
+            background-image: url(https://s2.svgbox.net/files.svg?ic=css);
         }
 
         .menu-item{ //li
@@ -76,6 +89,20 @@
 }
 
 .menu-evenement-container{
+    .menu-item{
+        a{
+            color:$color__font-main ;
+        }
+    }
+
+    &:hover{
+        a{
+            color:$color__font-main ;
+        }
+    }
+}
+
+.menu-atelier-container{
     .menu-item{
         a{
             color:$color__font-main ;
