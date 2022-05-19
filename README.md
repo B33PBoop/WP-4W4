@@ -8,4 +8,5 @@
 ##### Chaque Atelier à sa propre page basée sur le template "atelier"
 ##### Chaque bloc du menu à un icone animé quand on le survole
 
-#### Lien vers la page Github: https://b33pboop.github.io/WP-4W4/
+###Lien vers le site Siteground (si plus tard que le 1/06/2022, il n'existe probablement plus)
+### https://eddym49.sg-host.com/
